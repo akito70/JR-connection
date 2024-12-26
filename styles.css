@@ -1,0 +1,183 @@
+/* Estilos generales */
+/* Estilos globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1d364e, #182e44, #0a1c27); /* Gradiente de 3 colores en fondo */
+    color: #ddd; /* Texto claro */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0e2033, #1d3249, #061f25); /* Degradado de tonos oscuros */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra suave para el header */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #4ade80; /* Verde para hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #000c14, #172e3d, #121a29); /* Degradado de 3 tonos oscuros */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #e5e5e5; /* Texto claro */
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.hero-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra suave para la imagen */
+}
+
+/* Botones */
+.cta-button {
+    background-color: #4ade80;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #16a34a;
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Productos */
+.products {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(135deg, #02101f, #24415f, #091c29); /* Degradado de tonos oscuros y grises */
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #e5e5e5;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: linear-gradient(145deg, #03121d, #183e57, #051024); /* Degradado de 3 tonos oscuros */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #b3b3b3;
+}
+
+.price {
+    font-size: 18px;
+    color: #ef4444; /* Rojo para el precio */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #091822, #1c3f49, #081a2c); /* Degradado con varios tonos oscuros */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Sombra para el pie de página */
+}
+
+footer a {
+    text-decoration: none;
+    color: #4ade80;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #16a34a;
+}
